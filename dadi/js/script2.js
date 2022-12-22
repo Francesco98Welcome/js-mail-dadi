@@ -4,19 +4,22 @@
 */
 
 let player = Math.floor(Math.random() * 6) + 1;
-console.log(player);
+console.log(player + ' - PLAYER');
 
 let pc = Math.floor(Math.random() * 6) + 1;
-console.log(pc);
+console.log(pc + ' - PC');
 
 
 if (player > pc) {
-    console.log('vince player');
+    console.log ('-----------------------')
+    console.log('vince PLAYER');
 }
-else if (pc > player){
-    console.log('vince pc');
+else if (pc > player) {
+    console.log ('-----------------------')
+    console.log('vince PC');
 }
 else {
+    console.log ('-----------------------')
     console.log('pareggio');
 }
 
