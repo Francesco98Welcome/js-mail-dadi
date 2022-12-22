@@ -54,10 +54,10 @@ function valuta () {
     let chiedoEmail = prompt('inserisci la tua email');
 
     if (chiedoEmail == mails[0] || chiedoEmail == mails[1] || chiedoEmail == mails[2]) {
-        console.log('ok, email corretta!')
+        alert('ok, email corretta!')
     } 
     else {
-        console.log('email sbagliata');
+        alert('email sbagliata');
     }
 
 
