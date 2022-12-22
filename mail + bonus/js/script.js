@@ -15,6 +15,8 @@ const mails = ['frank@gmail.it', 'jonny@gmail.it', 'gino@gmail.it']
 function valuta () {
     let inputValue = inputEmail.value;
 
+    /*  - SOLUZIONE includes();
+
     if (mails.includes(inputValue)) {
         h2.innerHTML = 'OK';
         inputEmail.value = '';
@@ -25,6 +27,20 @@ function valuta () {
         inputEmail.value = '';
         h2.style.color = 'red';
     }
+
+    */  // SOLUZIONE verifica con || 
+
+    if (inputValue == mails[0] || inputValue == mails[1] || inputValue == mails[2]){
+        h2.innerHTML = 'OK';
+        inputEmail.value = '';
+        h2.style.color = 'green';
+    }
+    else {
+        h2.innerHTML = '!error';
+        inputEmail.value = '';
+        h2.style.color = 'red';
+    }
 }
+
 
 
